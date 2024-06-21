@@ -1,3 +1,9 @@
+import personal.Swap;
+import solution.sln118;
+import solution.sln69;
+
+import java.util.List;
+
 /**
  * @author kk
  * @description 程序起点
@@ -5,6 +11,10 @@
  */
 public class Main {
     public static void main(String[] args) {
-
+        int x = 2,y = 4;
+        x = x*y;
+        y = x / y;
+        x = x / y;
+        System.out.println(x+"      "+y);
     }
 }
