@@ -1,7 +1,7 @@
 import personal.Swap;
-import solution.sln118;
-import solution.sln69;
+import solution.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -11,10 +11,17 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
-        int x = 2,y = 4;
-        x = x*y;
-        y = x / y;
-        x = x / y;
-        System.out.println(x+"      "+y);
+        List<Integer> list = new ArrayList<>();
+        list.add(12);
+        list.add(1);
+        list.add(2);
+        list.add(32);
+        list.add(52);
+
+        System.out.println(list.get(0));
+        System.out.println(list.get(1));
+        System.out.println(list.get(2));
+        System.out.println(list.get(3));
+        System.out.println(list.get(4));
     }
 }
