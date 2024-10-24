@@ -1,3 +1,4 @@
+import other.Solution;
 import personal.Swap;
 import solution.*;
 
@@ -11,7 +12,14 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
-        char a = 'a';
-        System.out.println(a+1);
+        double ans = 0;
+        for(int i = 1;i <= 1000;i++){
+            if(i % 4 == 0 ){
+                ans += 366;
+            }else {
+                ans += 365;
+            }
+        }
+        System.out.println((ans - 1) / 1000);
     }
 }
