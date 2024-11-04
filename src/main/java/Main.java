@@ -12,14 +12,9 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
-        double ans = 0;
-        for(int i = 1;i <= 1000;i++){
-            if(i % 4 == 0 ){
-                ans += 366;
-            }else {
-                ans += 365;
-            }
-        }
-        System.out.println((ans - 1) / 1000);
+         ms1621 ms = new ms1621();
+        int[] arr1 = {4,1,2,1,1,2};
+        int[] arr2 = {3,6,3,3};
+        System.out.println(ms.findSwapValues(arr1,arr2).toString());
     }
 }
