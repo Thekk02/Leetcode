@@ -9,11 +9,16 @@ import java.util.Arrays;
  */
 public class sln1005 {
     public int largestSumAfterKNegations(int[] nums, int k) {
-        int sum = Arrays.stream(nums).sum();
         Arrays.sort(nums);
-        if(nums[0] < 0){
-
+        int sum = 0;
+        for(int i = 0;i < nums.length;i++){
+            if(nums[i] < 0&& k > 0){
+                nums[i] = -1 * nums[i];
+                k--;
+            }
+            sum += nums[i];
         }
-        return 0;
+        Arrays.sort(nums);
+        return sum - (k % 2 == 0? 0 : 2 * nums[0]);
     }
 }
